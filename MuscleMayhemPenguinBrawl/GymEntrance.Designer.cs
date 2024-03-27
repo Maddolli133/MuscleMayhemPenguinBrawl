@@ -34,7 +34,7 @@
             // 
             // beginButton
             // 
-            this.beginButton.Location = new System.Drawing.Point(569, 356);
+            this.beginButton.Location = new System.Drawing.Point(191, 232);
             this.beginButton.Name = "beginButton";
             this.beginButton.Size = new System.Drawing.Size(75, 23);
             this.beginButton.TabIndex = 0;
@@ -45,17 +45,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(170, 155);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(394, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 13);
+            this.label1.Size = new System.Drawing.Size(292, 26);
             this.label1.TabIndex = 1;
-            this.label1.Text = "ADD GYM ENTRANCE IMAGE AND GYM GUY EXPLAINING GAME";
+            this.label1.Text = "YOUR GOAL IS TO GET SWOL AND FIGHT THE WAVES \r\nOF PENGUINS!!";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // GymEntrance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackgroundImage = global::MuscleMayhemPenguinBrawl.Properties.Resources.EntranceImage;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.beginButton);
             this.Name = "GymEntrance";
