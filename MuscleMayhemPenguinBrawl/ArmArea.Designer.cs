@@ -39,13 +39,14 @@
             this.legPointsLabel = new System.Windows.Forms.Label();
             this.backPointsLabel = new System.Windows.Forms.Label();
             this.coinLabel = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // armWeightUpButton
             // 
-            this.armWeightUpButton.Location = new System.Drawing.Point(17, 354);
+            this.armWeightUpButton.Location = new System.Drawing.Point(17, 519);
             this.armWeightUpButton.Name = "armWeightUpButton";
-            this.armWeightUpButton.Size = new System.Drawing.Size(93, 38);
+            this.armWeightUpButton.Size = new System.Drawing.Size(132, 73);
             this.armWeightUpButton.TabIndex = 0;
             this.armWeightUpButton.Text = "Up Weight \r\n(10 Arm Points)";
             this.armWeightUpButton.UseVisualStyleBackColor = true;
@@ -53,9 +54,9 @@
             // 
             // areaChestButton
             // 
-            this.areaChestButton.Location = new System.Drawing.Point(602, 176);
+            this.areaChestButton.Location = new System.Drawing.Point(910, 424);
             this.areaChestButton.Name = "areaChestButton";
-            this.areaChestButton.Size = new System.Drawing.Size(98, 55);
+            this.areaChestButton.Size = new System.Drawing.Size(111, 106);
             this.areaChestButton.TabIndex = 2;
             this.areaChestButton.Text = "Unlock Next Area \r\n(20 Arm Points)";
             this.areaChestButton.UseVisualStyleBackColor = true;
@@ -63,9 +64,9 @@
             // 
             // skillButton
             // 
-            this.skillButton.Location = new System.Drawing.Point(602, 354);
+            this.skillButton.Location = new System.Drawing.Point(890, 664);
             this.skillButton.Name = "skillButton";
-            this.skillButton.Size = new System.Drawing.Size(98, 55);
+            this.skillButton.Size = new System.Drawing.Size(122, 80);
             this.skillButton.TabIndex = 3;
             this.skillButton.Text = "Skill Upgrade";
             this.skillButton.UseVisualStyleBackColor = true;
@@ -79,9 +80,9 @@
             // 
             // armLiftButton
             // 
-            this.armLiftButton.Location = new System.Drawing.Point(285, 354);
+            this.armLiftButton.Location = new System.Drawing.Point(443, 664);
             this.armLiftButton.Name = "armLiftButton";
-            this.armLiftButton.Size = new System.Drawing.Size(110, 55);
+            this.armLiftButton.Size = new System.Drawing.Size(188, 80);
             this.armLiftButton.TabIndex = 4;
             this.armLiftButton.Text = "Lift";
             this.armLiftButton.UseVisualStyleBackColor = true;
@@ -91,7 +92,7 @@
             // 
             this.armPointsLabel.AutoSize = true;
             this.armPointsLabel.BackColor = System.Drawing.Color.White;
-            this.armPointsLabel.Location = new System.Drawing.Point(599, 63);
+            this.armPointsLabel.Location = new System.Drawing.Point(878, 54);
             this.armPointsLabel.Name = "armPointsLabel";
             this.armPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.armPointsLabel.TabIndex = 5;
@@ -101,7 +102,7 @@
             // 
             this.chestPointsLabel.AutoSize = true;
             this.chestPointsLabel.BackColor = System.Drawing.Color.White;
-            this.chestPointsLabel.Location = new System.Drawing.Point(599, 76);
+            this.chestPointsLabel.Location = new System.Drawing.Point(878, 67);
             this.chestPointsLabel.Name = "chestPointsLabel";
             this.chestPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.chestPointsLabel.TabIndex = 5;
@@ -111,7 +112,7 @@
             // 
             this.legPointsLabel.AutoSize = true;
             this.legPointsLabel.BackColor = System.Drawing.Color.White;
-            this.legPointsLabel.Location = new System.Drawing.Point(599, 89);
+            this.legPointsLabel.Location = new System.Drawing.Point(878, 80);
             this.legPointsLabel.Name = "legPointsLabel";
             this.legPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.legPointsLabel.TabIndex = 5;
@@ -121,7 +122,7 @@
             // 
             this.backPointsLabel.AutoSize = true;
             this.backPointsLabel.BackColor = System.Drawing.Color.White;
-            this.backPointsLabel.Location = new System.Drawing.Point(599, 102);
+            this.backPointsLabel.Location = new System.Drawing.Point(878, 93);
             this.backPointsLabel.Name = "backPointsLabel";
             this.backPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.backPointsLabel.TabIndex = 5;
@@ -131,11 +132,21 @@
             // 
             this.coinLabel.AutoSize = true;
             this.coinLabel.BackColor = System.Drawing.Color.White;
-            this.coinLabel.Location = new System.Drawing.Point(599, 38);
+            this.coinLabel.Location = new System.Drawing.Point(878, 29);
             this.coinLabel.Name = "coinLabel";
             this.coinLabel.Size = new System.Drawing.Size(13, 13);
             this.coinLabel.TabIndex = 5;
             this.coinLabel.Text = "0";
+            // 
+            // exitButton
+            // 
+            this.exitButton.Location = new System.Drawing.Point(460, 20);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(171, 47);
+            this.exitButton.TabIndex = 6;
+            this.exitButton.Text = "Quit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // ArmArea
             // 
@@ -144,6 +155,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::MuscleMayhemPenguinBrawl.Properties.Resources.ArmImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.coinLabel);
             this.Controls.Add(this.backPointsLabel);
             this.Controls.Add(this.legPointsLabel);
@@ -155,7 +167,7 @@
             this.Controls.Add(this.armWeightUpButton);
             this.DoubleBuffered = true;
             this.Name = "ArmArea";
-            this.Size = new System.Drawing.Size(703, 442);
+            this.Size = new System.Drawing.Size(1024, 768);
             this.Load += new System.EventHandler(this.ArmArea_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -174,5 +186,6 @@
         private System.Windows.Forms.Label legPointsLabel;
         private System.Windows.Forms.Label backPointsLabel;
         private System.Windows.Forms.Label coinLabel;
+        private System.Windows.Forms.Button exitButton;
     }
 }

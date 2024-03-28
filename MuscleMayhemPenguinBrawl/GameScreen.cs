@@ -16,8 +16,6 @@ namespace MuscleMayhemPenguinBrawl
 
         Random randGen = new Random();
 
-        SolidBrush redBrush = new SolidBrush(Color.Red);
-
         List<Penguins> enemies = new List<Penguins>();
         Player hero;
 
@@ -26,6 +24,9 @@ namespace MuscleMayhemPenguinBrawl
         bool aKeyDown, dKeyDown, wKeyDown, sKeyDown;
 
         Penguins chasePenguin;
+
+      
+        SoundPlayer bam = new SoundPlayer (Properties.Resources.Bam);
 
      //   System.Windows.Media.MediaPlayer backMedia = new System.Windows.Media.MediaPlayer();
 
@@ -127,18 +128,12 @@ namespace MuscleMayhemPenguinBrawl
                 hero.Move("left");
             }
 
-            //check for collision between player and chaseball
-            if(hero.Collision(chasePenguin))
-            {
-                Form1.coinPoints++;
-                coinLabel.Text = $"{Form1.coinPoints}";
-            }
-
             //check for collision between player and enemies
             foreach(Penguins enemy in enemies)
             {
                 if (hero.Collision(enemy))
                 {
+                    bam.Play();
                     Form1.coinPoints++;
                     coinLabel.Text = $"{Form1.coinPoints}";
 

@@ -184,5 +184,14 @@
   <ItemGroup>
     <None Include="Resources\bad.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bam.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\210164__augdog__bam %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\210164__augdog__bam %281%29 %281%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

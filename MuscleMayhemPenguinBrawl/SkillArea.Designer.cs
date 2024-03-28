@@ -44,7 +44,7 @@
             // 
             this.strengthUpButton.Location = new System.Drawing.Point(89, 125);
             this.strengthUpButton.Name = "strengthUpButton";
-            this.strengthUpButton.Size = new System.Drawing.Size(75, 23);
+            this.strengthUpButton.Size = new System.Drawing.Size(111, 59);
             this.strengthUpButton.TabIndex = 0;
             this.strengthUpButton.Text = "Strength";
             this.strengthUpButton.UseVisualStyleBackColor = true;
@@ -52,36 +52,37 @@
             // 
             // healthUpButton
             // 
-            this.healthUpButton.Location = new System.Drawing.Point(224, 125);
+            this.healthUpButton.Location = new System.Drawing.Point(330, 125);
             this.healthUpButton.Name = "healthUpButton";
-            this.healthUpButton.Size = new System.Drawing.Size(75, 23);
+            this.healthUpButton.Size = new System.Drawing.Size(130, 59);
             this.healthUpButton.TabIndex = 1;
             this.healthUpButton.UseVisualStyleBackColor = true;
             this.healthUpButton.Click += new System.EventHandler(this.healthUpButton_Click);
             // 
             // speedUpButton
             // 
-            this.speedUpButton.Location = new System.Drawing.Point(371, 125);
+            this.speedUpButton.Location = new System.Drawing.Point(583, 125);
             this.speedUpButton.Name = "speedUpButton";
-            this.speedUpButton.Size = new System.Drawing.Size(75, 23);
+            this.speedUpButton.Size = new System.Drawing.Size(117, 59);
             this.speedUpButton.TabIndex = 2;
             this.speedUpButton.UseVisualStyleBackColor = true;
             this.speedUpButton.Click += new System.EventHandler(this.speedUpButton_Click);
             // 
             // laserUpButton
             // 
-            this.laserUpButton.Location = new System.Drawing.Point(516, 125);
+            this.laserUpButton.Location = new System.Drawing.Point(801, 125);
             this.laserUpButton.Name = "laserUpButton";
-            this.laserUpButton.Size = new System.Drawing.Size(75, 23);
+            this.laserUpButton.Size = new System.Drawing.Size(109, 59);
             this.laserUpButton.TabIndex = 3;
             this.laserUpButton.UseVisualStyleBackColor = true;
             this.laserUpButton.Click += new System.EventHandler(this.laserUpButton_Click);
             // 
             // battleAreaButton
             // 
-            this.battleAreaButton.Location = new System.Drawing.Point(573, 404);
+            this.battleAreaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.battleAreaButton.Location = new System.Drawing.Point(360, 412);
             this.battleAreaButton.Name = "battleAreaButton";
-            this.battleAreaButton.Size = new System.Drawing.Size(75, 23);
+            this.battleAreaButton.Size = new System.Drawing.Size(330, 119);
             this.battleAreaButton.TabIndex = 4;
             this.battleAreaButton.Text = "Battle";
             this.battleAreaButton.UseVisualStyleBackColor = true;
@@ -99,7 +100,7 @@
             // healthLevelLabel
             // 
             this.healthLevelLabel.AutoSize = true;
-            this.healthLevelLabel.Location = new System.Drawing.Point(258, 50);
+            this.healthLevelLabel.Location = new System.Drawing.Point(327, 50);
             this.healthLevelLabel.Name = "healthLevelLabel";
             this.healthLevelLabel.Size = new System.Drawing.Size(0, 13);
             this.healthLevelLabel.TabIndex = 6;
@@ -107,7 +108,7 @@
             // speedLevelLabel
             // 
             this.speedLevelLabel.AutoSize = true;
-            this.speedLevelLabel.Location = new System.Drawing.Point(405, 50);
+            this.speedLevelLabel.Location = new System.Drawing.Point(580, 50);
             this.speedLevelLabel.Name = "speedLevelLabel";
             this.speedLevelLabel.Size = new System.Drawing.Size(0, 13);
             this.speedLevelLabel.TabIndex = 7;
@@ -115,7 +116,7 @@
             // laserLevelLabel
             // 
             this.laserLevelLabel.AutoSize = true;
-            this.laserLevelLabel.Location = new System.Drawing.Point(525, 50);
+            this.laserLevelLabel.Location = new System.Drawing.Point(798, 60);
             this.laserLevelLabel.Name = "laserLevelLabel";
             this.laserLevelLabel.Size = new System.Drawing.Size(0, 13);
             this.laserLevelLabel.TabIndex = 8;
@@ -123,7 +124,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(315, 13);
+            this.label1.Location = new System.Drawing.Point(490, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 9;
@@ -144,8 +145,9 @@
             this.Controls.Add(this.speedUpButton);
             this.Controls.Add(this.healthUpButton);
             this.Controls.Add(this.strengthUpButton);
+            this.DoubleBuffered = true;
             this.Name = "SkillArea";
-            this.Size = new System.Drawing.Size(703, 442);
+            this.Size = new System.Drawing.Size(1024, 768);
             this.ResumeLayout(false);
             this.PerformLayout();
 

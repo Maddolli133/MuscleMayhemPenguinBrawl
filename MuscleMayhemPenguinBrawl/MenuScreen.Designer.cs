@@ -33,9 +33,9 @@
             // 
             // startGameButton
             // 
-            this.startGameButton.Location = new System.Drawing.Point(260, 327);
+            this.startGameButton.Location = new System.Drawing.Point(501, 288);
             this.startGameButton.Name = "startGameButton";
-            this.startGameButton.Size = new System.Drawing.Size(75, 23);
+            this.startGameButton.Size = new System.Drawing.Size(130, 59);
             this.startGameButton.TabIndex = 1;
             this.startGameButton.Text = "Start Game";
             this.startGameButton.UseVisualStyleBackColor = true;
@@ -49,8 +49,9 @@
             this.BackgroundImage = global::MuscleMayhemPenguinBrawl.Properties.Resources.MenuScreenImage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.startGameButton);
+            this.DoubleBuffered = true;
             this.Name = "MenuScreen";
-            this.Size = new System.Drawing.Size(578, 442);
+            this.Size = new System.Drawing.Size(1024, 768);
             this.ResumeLayout(false);
 
         }

@@ -99,9 +99,9 @@
             // 
             // legsLiftButton
             // 
-            this.legsLiftButton.Location = new System.Drawing.Point(281, 357);
+            this.legsLiftButton.Location = new System.Drawing.Point(453, 592);
             this.legsLiftButton.Name = "legsLiftButton";
-            this.legsLiftButton.Size = new System.Drawing.Size(110, 55);
+            this.legsLiftButton.Size = new System.Drawing.Size(138, 76);
             this.legsLiftButton.TabIndex = 21;
             this.legsLiftButton.Text = "Lift";
             this.legsLiftButton.UseVisualStyleBackColor = true;
@@ -109,9 +109,9 @@
             // 
             // skillButton
             // 
-            this.skillButton.Location = new System.Drawing.Point(598, 357);
+            this.skillButton.Location = new System.Drawing.Point(900, 592);
             this.skillButton.Name = "skillButton";
-            this.skillButton.Size = new System.Drawing.Size(98, 55);
+            this.skillButton.Size = new System.Drawing.Size(121, 86);
             this.skillButton.TabIndex = 20;
             this.skillButton.Text = "Skill Upgrade";
             this.skillButton.UseVisualStyleBackColor = true;
@@ -119,9 +119,9 @@
             // 
             // areaBackButton
             // 
-            this.areaBackButton.Location = new System.Drawing.Point(598, 179);
+            this.areaBackButton.Location = new System.Drawing.Point(892, 247);
             this.areaBackButton.Name = "areaBackButton";
-            this.areaBackButton.Size = new System.Drawing.Size(98, 55);
+            this.areaBackButton.Size = new System.Drawing.Size(118, 68);
             this.areaBackButton.TabIndex = 19;
             this.areaBackButton.Text = "Unlock Next Area\r\n (60)";
             this.areaBackButton.UseVisualStyleBackColor = true;
@@ -129,9 +129,9 @@
             // 
             // legsWeightUpButton
             // 
-            this.legsWeightUpButton.Location = new System.Drawing.Point(13, 357);
+            this.legsWeightUpButton.Location = new System.Drawing.Point(6, 538);
             this.legsWeightUpButton.Name = "legsWeightUpButton";
-            this.legsWeightUpButton.Size = new System.Drawing.Size(109, 34);
+            this.legsWeightUpButton.Size = new System.Drawing.Size(150, 60);
             this.legsWeightUpButton.TabIndex = 17;
             this.legsWeightUpButton.Text = "Up Weight \r\n(10 Leg Points)";
             this.legsWeightUpButton.UseVisualStyleBackColor = true;
@@ -162,7 +162,7 @@
             this.Controls.Add(this.legsWeightUpButton);
             this.DoubleBuffered = true;
             this.Name = "LegsArea";
-            this.Size = new System.Drawing.Size(703, 442);
+            this.Size = new System.Drawing.Size(1024, 768);
             this.Load += new System.EventHandler(this.LegsArea_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

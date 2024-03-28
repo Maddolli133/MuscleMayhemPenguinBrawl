@@ -34,9 +34,9 @@
             // 
             // beginButton
             // 
-            this.beginButton.Location = new System.Drawing.Point(191, 232);
+            this.beginButton.Location = new System.Drawing.Point(285, 404);
             this.beginButton.Name = "beginButton";
-            this.beginButton.Size = new System.Drawing.Size(75, 23);
+            this.beginButton.Size = new System.Drawing.Size(89, 37);
             this.beginButton.TabIndex = 0;
             this.beginButton.Text = "Begin";
             this.beginButton.UseVisualStyleBackColor = true;
@@ -46,12 +46,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(394, 60);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(574, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 26);
+            this.label1.Size = new System.Drawing.Size(401, 50);
             this.label1.TabIndex = 1;
-            this.label1.Text = "YOUR GOAL IS TO GET SWOL AND FIGHT THE WAVES \r\nOF PENGUINS!!";
+            this.label1.Text = "YOUR GOAL IS TO GET SWOL AND \r\nFIGHT THE WAVES  OF PENGUINS!!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // GymEntrance
             // 
@@ -62,8 +64,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.beginButton);
+            this.DoubleBuffered = true;
             this.Name = "GymEntrance";
-            this.Size = new System.Drawing.Size(703, 442);
+            this.Size = new System.Drawing.Size(1024, 768);
             this.ResumeLayout(false);
             this.PerformLayout();
 

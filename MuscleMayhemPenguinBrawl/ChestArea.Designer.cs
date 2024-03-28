@@ -46,7 +46,7 @@
             // 
             this.coinLabel.AutoSize = true;
             this.coinLabel.BackColor = System.Drawing.Color.White;
-            this.coinLabel.Location = new System.Drawing.Point(592, 41);
+            this.coinLabel.Location = new System.Drawing.Point(933, 79);
             this.coinLabel.Name = "coinLabel";
             this.coinLabel.Size = new System.Drawing.Size(13, 13);
             this.coinLabel.TabIndex = 11;
@@ -56,7 +56,7 @@
             // 
             this.backPointsLabel.AutoSize = true;
             this.backPointsLabel.BackColor = System.Drawing.Color.White;
-            this.backPointsLabel.Location = new System.Drawing.Point(592, 105);
+            this.backPointsLabel.Location = new System.Drawing.Point(933, 143);
             this.backPointsLabel.Name = "backPointsLabel";
             this.backPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.backPointsLabel.TabIndex = 12;
@@ -66,7 +66,7 @@
             // 
             this.legPointsLabel.AutoSize = true;
             this.legPointsLabel.BackColor = System.Drawing.Color.White;
-            this.legPointsLabel.Location = new System.Drawing.Point(592, 92);
+            this.legPointsLabel.Location = new System.Drawing.Point(933, 130);
             this.legPointsLabel.Name = "legPointsLabel";
             this.legPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.legPointsLabel.TabIndex = 13;
@@ -76,7 +76,7 @@
             // 
             this.chestPointsLabel.AutoSize = true;
             this.chestPointsLabel.BackColor = System.Drawing.Color.White;
-            this.chestPointsLabel.Location = new System.Drawing.Point(592, 79);
+            this.chestPointsLabel.Location = new System.Drawing.Point(933, 117);
             this.chestPointsLabel.Name = "chestPointsLabel";
             this.chestPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.chestPointsLabel.TabIndex = 14;
@@ -86,7 +86,7 @@
             // 
             this.armPointsLabel.AutoSize = true;
             this.armPointsLabel.BackColor = System.Drawing.Color.White;
-            this.armPointsLabel.Location = new System.Drawing.Point(592, 66);
+            this.armPointsLabel.Location = new System.Drawing.Point(933, 104);
             this.armPointsLabel.Name = "armPointsLabel";
             this.armPointsLabel.Size = new System.Drawing.Size(13, 13);
             this.armPointsLabel.TabIndex = 15;
@@ -94,9 +94,9 @@
             // 
             // chestLiftButton
             // 
-            this.chestLiftButton.Location = new System.Drawing.Point(278, 357);
+            this.chestLiftButton.Location = new System.Drawing.Point(473, 689);
             this.chestLiftButton.Name = "chestLiftButton";
-            this.chestLiftButton.Size = new System.Drawing.Size(110, 55);
+            this.chestLiftButton.Size = new System.Drawing.Size(152, 79);
             this.chestLiftButton.TabIndex = 10;
             this.chestLiftButton.Text = "Lift";
             this.chestLiftButton.UseVisualStyleBackColor = true;
@@ -104,9 +104,9 @@
             // 
             // skillButton
             // 
-            this.skillButton.Location = new System.Drawing.Point(595, 357);
+            this.skillButton.Location = new System.Drawing.Point(896, 690);
             this.skillButton.Name = "skillButton";
-            this.skillButton.Size = new System.Drawing.Size(98, 55);
+            this.skillButton.Size = new System.Drawing.Size(125, 76);
             this.skillButton.TabIndex = 9;
             this.skillButton.Text = "Skill Upgrade";
             this.skillButton.UseVisualStyleBackColor = true;
@@ -114,9 +114,9 @@
             // 
             // areaLegsButton
             // 
-            this.areaLegsButton.Location = new System.Drawing.Point(595, 179);
+            this.areaLegsButton.Location = new System.Drawing.Point(891, 352);
             this.areaLegsButton.Name = "areaLegsButton";
-            this.areaLegsButton.Size = new System.Drawing.Size(98, 55);
+            this.areaLegsButton.Size = new System.Drawing.Size(117, 81);
             this.areaLegsButton.TabIndex = 8;
             this.areaLegsButton.Text = "Unlock Next Area\r\n (40 Chest Points)";
             this.areaLegsButton.UseVisualStyleBackColor = true;
@@ -124,9 +124,9 @@
             // 
             // chestWeightUpButton
             // 
-            this.chestWeightUpButton.Location = new System.Drawing.Point(10, 357);
+            this.chestWeightUpButton.Location = new System.Drawing.Point(3, 641);
             this.chestWeightUpButton.Name = "chestWeightUpButton";
-            this.chestWeightUpButton.Size = new System.Drawing.Size(109, 34);
+            this.chestWeightUpButton.Size = new System.Drawing.Size(140, 68);
             this.chestWeightUpButton.TabIndex = 6;
             this.chestWeightUpButton.Text = "Up Weight \r\n(10 Chest Points)";
             this.chestWeightUpButton.UseVisualStyleBackColor = true;
@@ -167,7 +167,7 @@
             this.Controls.Add(this.chestWeightUpButton);
             this.DoubleBuffered = true;
             this.Name = "ChestArea";
-            this.Size = new System.Drawing.Size(703, 442);
+            this.Size = new System.Drawing.Size(1024, 768);
             this.Load += new System.EventHandler(this.ChestArea_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

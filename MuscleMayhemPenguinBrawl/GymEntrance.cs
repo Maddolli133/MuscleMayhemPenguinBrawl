@@ -21,5 +21,10 @@ namespace MuscleMayhemPenguinBrawl
         {
             Form1.ChangeScreen(this, new ArmArea());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
